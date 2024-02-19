@@ -16,7 +16,7 @@
     2. Non-mutating Methods internally create a copy of an array modifies it accordingly and returns the new array
 */
 
-let ar = [1, 2, 3, 4, 5];
+let ar = [1, 2, 300, 4, 5];
 
 // mutating
 ar.push(6);
@@ -27,17 +27,17 @@ ar.pop();
 console.log("Pop :", ar);
 
 // non-mutating
-copyAr = ar.filter((ele) => ele % 2 == 0);
-console.log("Filter :", copyAr);
+updatedAr = ar.filter((ele) => ele % 2 == 0);
+console.log("Filter :", updatedAr);
 
 // mutating
 index = ar.find((ele) => ele > 2 && ele % 2 == 0);
 console.log("Find :", index);
 
 // mutating
-ar.sort();
-console.log("sort :", ar);
+ar.sort((a, b) => a - b);
+console.log("Sort :", ar);
 
 // non-mutating
-copyAr = ar.map((ele) => ele * 2);
-console.log("Map :", copyAr);
+updatedAr = ar.map((ele) => ele * 2);
+console.log("Map :", updatedAr);
