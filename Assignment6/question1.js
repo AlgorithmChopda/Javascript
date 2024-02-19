@@ -95,15 +95,9 @@ function getById(id) {
 }
 
 firstName = "Sam";
-console.log(
-  "Records that includes",
-  firstName,
-  ":",
-  filterByName(firstName),
-  "\n"
-);
+console.log("Records that includes", firstName, ":", filterByName(firstName));
 
-console.log("All email :", getEmails(""), "\n");
+console.log("All emails :", getEmails(""), "\n");
 
 id = 5;
 console.log("Element at ", id, ":", getById(id), "\n");
