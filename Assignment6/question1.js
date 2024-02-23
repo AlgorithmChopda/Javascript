@@ -81,7 +81,7 @@ function getEmails() {
 
 function sortByDOB() {
   // deep copy is created using the stringify method
-  copyOfData = JSON.parse(JSON.stringify(ar));
+  let copyOfData = JSON.parse(JSON.stringify(ar));
   copyOfData.sort(
     (ele1, ele2) =>
       new Date(ele2.date_of_birth).getTime() -
