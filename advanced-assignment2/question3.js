@@ -20,3 +20,9 @@ const arrowFunc = () => {
 
 normalFunc();
 arrowFunc();
+
+/*
+  output:
+    in normal function
+    in arrow function
+*/

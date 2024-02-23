@@ -23,6 +23,7 @@ class Validation {
   };
 
   isValid() {
+    // check string validation
     if (
       typeof this.str !== "string" ||
       this.str.length < this.min ||
@@ -39,4 +40,4 @@ class Validation {
 
 str = "abc";
 let isValid = new Validation(str, 3, 10, false, false).isValid();
-console.log(str, ":", isValid);
+console.log(str, ":", isValid); // abc : true
