@@ -10,47 +10,46 @@
     5. Can you use return instead of break in loops?
 */
 
-
 // part 1
 let age = 5;
 if (age <= 12) {
-    console.log("child")
-}
-else if (age >= 13 && age <= 18){
-    console.log("teen")
+  console.log("child");
+} else if (age >= 13 && age <= 18) {
+  console.log("teen");
 } else {
-    console.log("adult")
+  console.log("adult");
 }
-console.log()
 
 //part 2
-switch(true) {
-    case age <= 12:
-        console.log("child");break;
-    case age >= 13 && age <= 18:
-        console.log("teen"); break;
-    default:
-        console.log("adult");
+switch (true) {
+  case age <= 12:
+    console.log("child");
+    break;
+  case age >= 13 && age <= 18:
+    console.log("teen");
+    break;
+  default:
+    console.log("adult");
 }
-console.log()
 
 //part 3
-let ar = [], arraySize = 25;
-for(let i = 1 ; i <= arraySize ; i++) {
-    ar.push(i)
+let ar = [],
+  arraySize = 25;
+for (let i = 1; i <= arraySize; i++) {
+  ar.push(i);
 }
-console.log("for loop")
-console.log("Ar :", ar)
-console.log()
+console.log("for loop");
+console.log("Ar :", ar);
 
 //part 4
-let ar1 = [], arraySize1 = 25, i = 1;
-while(i++ <= arraySize1) {
-    ar1.push(i)
+let ar1 = [],
+  arraySize1 = 25,
+  i = 1;
+while (i++ <= arraySize1) {
+  ar1.push(i);
 }
-console.log("while loop")
-console.log("Ar :", ar)
-console.log()
+console.log("while loop");
+console.log("Ar :", ar);
 
 //part 5
 // 5. Can you use return instead of break in loops?
