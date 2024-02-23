@@ -36,9 +36,50 @@ user = {
 };
 
 console.log("User :", user, "\n");
+/* 
+User : {
+  name: 'Harry Potter',
+  age: 12,
+  address: {
+    details: [ '4', 'Privet Drive' ],
+    area: 'Little Whinging',
+    city: 'Surrey',
+    state: 'England'
+  }
+} 
+*/
 
+// structure clone creates a deep copy of the object
 userCopy = structuredClone(user);
 userCopy.address.details[0] = "5";
 console.log("After Updation");
+
 console.log("User :", user, "\n");
+/* 
+After Updation
+User : {
+  name: 'Harry Potter',
+  age: 12,
+  address: {
+    details: [ '4', 'Privet Drive' ],
+    area: 'Little Whinging',
+    city: 'Surrey',
+    state: 'England'
+  }
+} 
+
+ */
 console.log("Copy User :", userCopy);
+/* 
+Copy User : {
+  name: 'Harry Potter',
+  age: 12,
+  address: {
+    details: [ '5', 'Privet Drive' ],
+    area: 'Little Whinging',
+    city: 'Surrey',
+    state: 'England'
+  }
+}
+
+ */

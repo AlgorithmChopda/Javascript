@@ -36,8 +36,10 @@ sort(users, “first_name “desc”) //Should return users sorted by first_name
 */
 
 function sort(users, key, order) {
+  // sort data on copy
   userCopy = structuredClone(users);
   userCopy.sort((a, b) => {
+    // if asc order return 1 if greater
     if (order == "asc") return a[key] > b[key] ? 1 : -1;
     return a[key] > b[key] ? -1 : 1;
   });
@@ -78,3 +80,36 @@ let users = [
 
 sortedUserList = sort(users, "date_of_birth", "desc");
 console.log("Sorted List :", sortedUserList);
+
+/*
+  Sorted List : [
+  {
+    id: 3,
+    first_name: 'Demetris',
+    email: 'dkilshall2@elpais.com',
+    date_of_birth: '2018/12/31',
+    gender: 'Male'
+  },
+  {
+    id: 4,
+    first_name: 'Amata',
+    email: 'abraiden3@canalblog.com',
+    date_of_birth: '2012/05/23',
+    gender: 'Female'
+  },
+  {
+    id: 1,
+    first_name: 'Nicki',
+    email: 'ncrozier0@squarespace.com',
+    date_of_birth: '2009/05/09',
+    gender: 'Male'
+  },
+  {
+    id: 2,
+    first_name: 'Raychel',
+    email: 'rmcgrady1@cpanel.net',
+    date_of_birth: '1996/11/05',
+    gender: 'Female'
+  }
+]
+*/

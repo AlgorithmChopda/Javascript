@@ -16,6 +16,7 @@ function filterObject(obj) {
   let filterObject = {};
   for (const [key, value] of Object.entries(obj)) {
     if (typeof value != "object") {
+      // if not object then add
       filterObject[key] = value;
     }
   }
@@ -33,4 +34,4 @@ let obj = {
 };
 
 let flatObject = filterObject(obj);
-console.log("Flat object :", flatObject);
+console.log("Flat object :", flatObject); // Flat object : { a: 'Apple', d: 'Dog' }

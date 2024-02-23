@@ -25,6 +25,7 @@
 function mapBy(users, entryKey) {
   let mappedObject = {};
   for (let user of users) {
+    // take the given entrykey to find the actual key and store deep copy of the object
     mappedObject[user[entryKey]] = structuredClone(user);
   }
 
@@ -49,3 +50,19 @@ let users = [
 key = "first_name";
 let mappedObject = mapBy(users, key);
 console.log("Mapped Object: ", mappedObject);
+/* 
+Mapped Object:  {
+  Nicki: {
+    id: 1,
+    first_name: 'Nicki',
+    email: 'ncrozier0@squarespace.com',
+    date_of_birth: '2009/05/09'
+  },
+  Raychel: {
+    id: 2,
+    first_name: 'Raychel',
+    email: 'rmcgrady1@cpanel.net',
+    date_of_birth: '1996/11/05'
+  }
+}
+*/

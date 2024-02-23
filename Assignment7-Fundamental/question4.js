@@ -60,10 +60,12 @@ function mergeById(userNames, userEmails) {
 
   for (let userName of userNames) {
     mergedArray.push(structuredClone(userName));
+    // for every new id create a mapping of it
     indexIdMap.set(userName.id, i++);
   }
 
   for (let userEmail of userEmails) {
+    // get the index for id and map the email to it
     mergedArray[indexIdMap.get(userEmail.id)]["email"] = userEmail.email;
   }
 
@@ -110,3 +112,11 @@ let userEmails = [
 
 mergedArray = mergeById(userNames, userEmails);
 console.log("Merged array :", mergedArray);
+/*
+  Merged array : [
+  { id: 1, first_name: 'Nicki', email: 'ncrozier0@squarespace.com' },
+  { id: 2, first_name: 'Raychel', email: 'rmcgrady1@cpanel.net' },
+  { id: 3, first_name: 'Demetris', email: 'dkilshall2@elpais.com' },
+  { id: 4, first_name: 'Amata', email: 'abraiden3@canalblog.com' }
+]
+*/
