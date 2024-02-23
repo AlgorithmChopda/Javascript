@@ -13,7 +13,7 @@
 // part 1
 let age = 5;
 if (age <= 12) {
-  console.log("child");
+  console.log("child"); // output: child
 } else if (age >= 13 && age <= 18) {
   console.log("teen");
 } else {
@@ -23,7 +23,7 @@ if (age <= 12) {
 //part 2
 switch (true) {
   case age <= 12:
-    console.log("child");
+    console.log("child"); // output: child
     break;
   case age >= 13 && age <= 18:
     console.log("teen");
@@ -39,7 +39,7 @@ for (let i = 1; i <= arraySize; i++) {
   ar.push(i);
 }
 console.log("for loop");
-console.log("Ar :", ar);
+console.log("Ar :", ar); // Ar : [1,  2,  3,  4,  5,  6,  7,  8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,25
 
 //part 4
 let ar1 = [],
@@ -49,7 +49,7 @@ while (i++ <= arraySize1) {
   ar1.push(i);
 }
 console.log("while loop");
-console.log("Ar :", ar);
+console.log("Ar :", ar); // Ar : [1,  2,  3,  4,  5,  6,  7,  8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,25
 
 //part 5
 // 5. Can you use return instead of break in loops?
@@ -59,6 +59,6 @@ console.log("Ar :", ar);
     function temp() {
         for(...) {
             return // directly to caller (parent) function
-        }
+        } 
     }
 */
