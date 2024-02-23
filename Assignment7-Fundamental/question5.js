@@ -10,4 +10,4 @@ function getUnique(ar) {
 let ar = ["vinay", "temp", "vinay", "abc", "temp"];
 uniqueList = getUnique(ar);
 
-console.log(uniqueList);
+console.log("Unique Elements:", uniqueList);
