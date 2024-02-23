@@ -96,10 +96,106 @@ function getById(id) {
 
 firstName = "Sam";
 console.log("Records that includes", firstName, ":", filterByName(firstName));
+/* 
+Records that includes Sam : [
+  {
+    id: 8,
+    first_name: 'Sam',
+    email: 'scorck7@sitemeter.com',
+    date_of_birth: '2020/08/30'
+  }
+] 
+*/
 
 console.log("All emails :", getEmails(""), "\n");
+/* 
+  All emails : [
+  'ncrozier0@squarespace.com',
+  'rmcgrady1@cpanel.net',
+  'dkilshall2@elpais.com',
+  'abraiden3@canalblog.com',
+  'vheap4@clickbank.net',
+  'fcrichton5@merriam-webster.com',
+  'kvasyukhnov6@devhub.com',
+  'scorck7@sitemeter.com',
+  'vferandez8@e-recht24.de',
+  'tpetyt9@upenn.edu'
+] 
+ */
 
 id = 5;
 console.log("Element at ", id, ":", getById(id), "\n");
+/* 
+Element at  5 : {
+  id: 5,
+  first_name: 'Venita',
+  email: 'vheap4@clickbank.net',
+  date_of_birth: '2020/10/04'
+}
+ */
 
-console.log("Sorted by DOB:", sortByDOB());
+console.log("Sorted by DOB in descending:", sortByDOB());
+/* 
+  Sorted by DOB: [
+  {
+    id: 5,
+    first_name: 'Venita',
+    email: 'vheap4@clickbank.net',
+    date_of_birth: '2020/10/04'
+  },
+  {
+    id: 8,
+    first_name: 'Sam',
+    email: 'scorck7@sitemeter.com',
+    date_of_birth: '2020/08/30'
+  },
+  {
+    id: 3,
+    first_name: 'Demetris',
+    email: 'dkilshall2@elpais.com',
+    date_of_birth: '2018/12/31'
+  },
+  {
+    id: 10,
+    first_name: 'Townie',
+    email: 'tpetyt9@upenn.edu',
+    date_of_birth: '2018/09/01'
+  },
+  {
+    id: 4,
+    first_name: 'Amata',
+    email: 'abraiden3@canalblog.com',
+    date_of_birth: '2012/05/23'
+  },
+  {
+    id: 7,
+    first_name: 'Kathleen',
+    email: 'kvasyukhnov6@devhub.com',
+    date_of_birth: '2010/12/20'
+  },
+  {
+    id: 6,
+    first_name: 'Fairfax',
+    email: 'fcrichton5@merriam-webster.com',
+    date_of_birth: '2009/12/23'
+  },
+  {
+    id: 1,
+    first_name: 'Nicki',
+    email: 'ncrozier0@squarespace.com',
+    date_of_birth: '2009/05/09'
+  },
+  {
+    id: 9,
+    first_name: 'Virgilio',
+    email: 'vferandez8@e-recht24.de',
+    date_of_birth: '2000/09/07'
+  },
+  {
+    id: 2,
+    first_name: 'Raychel',
+    email: 'rmcgrady1@cpanel.net',
+    date_of_birth: '1996/11/05'
+  }
+]
+ */

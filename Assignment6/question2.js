@@ -20,24 +20,24 @@ let ar = [1, 2, 300, 4, 5];
 
 // mutating
 ar.push(6);
-console.log("Push :", ar);
+console.log("Push :", ar); // Push : [ 1, 2, 300, 4, 5, 6 ]
 
 // mutating
 ar.pop();
-console.log("Pop :", ar);
+console.log("Pop :", ar); // Pop : [ 1, 2, 300, 4, 5 ]
 
 // non-mutating
 updatedAr = ar.filter((ele) => ele % 2 == 0);
-console.log("Filter :", updatedAr);
+console.log("Filter :", updatedAr); // Filter : [ 2, 300, 4 ]
 
 // mutating
 index = ar.find((ele) => ele > 2 && ele % 2 == 0);
-console.log("Find :", index);
+console.log("Find :", index); // Find : 300
 
 // mutating
 ar.sort((a, b) => a - b);
-console.log("Sort :", ar);
+console.log("Sort :", ar); // Sort : [ 1, 2, 4, 5, 300 ]
 
 // non-mutating
 updatedAr = ar.map((ele) => ele * 2);
-console.log("Map :", updatedAr);
+console.log("Map :", updatedAr); // Map : [ 2, 4, 8, 10, 600 ]
