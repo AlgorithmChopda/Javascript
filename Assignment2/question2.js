@@ -5,24 +5,24 @@
 function arrayOperations() {
   let ar = [1, 2, 3, 4, 5];
   console.log("Array with let");
-  console.log("Original array:", ar);
+  console.log("Original array:", ar); // Original array: [ 1, 2, 3, 4, 5 ]
 
   ar.push(100);
-  console.log("array after adding element:", ar);
+  console.log("array after adding element:", ar); // array after adding element: [ 1, 2, 3, 4, 5, 100 ]
 
   ar.pop();
-  console.log("array after removing element:", ar, "\n");
+  console.log("array after removing element:", ar, "\n"); // array after removing element: [ 1, 2, 3, 4, 5 ]
 
   const ar1 = [1, 2, 3];
   console.log("Array with const");
-  console.log("Original array:", ar1);
+  console.log("Original array:", ar1); // Original array: [ 1, 2, 3 ]
 
   ar1.push(100);
-  console.log("array after adding element:", ar1);
+  console.log("array after adding element:", ar1); // array after adding element: [ 1, 2, 3, 100 ]
 
   ar1.pop();
   ar1.pop();
-  console.log("array after removing 2 elements:", ar1);
+  console.log("array after removing 2 elements:", ar1); // array after removing 2 elements: [ 1, 2 ]
 }
 
 function objectOperations() {
@@ -33,24 +33,26 @@ function objectOperations() {
   };
 
   console.log("Object with let");
-  console.log("original object :", obj);
+  console.log("original object :", obj); // original object : { name: 'vinay', city: 'pune' }
 
   obj.mobileNo = "1234567890";
-  console.log("object after property addition :", obj);
+  console.log("object after property addition :", obj); // object after property addition : { name: 'vinay', city: 'pune', mobileNo: '1234567890' }
+
   delete obj.city;
-  console.log("object after property delete :", obj, "\n");
+  console.log("object after property delete :", obj, "\n"); // object after property delete : { name: 'vinay', mobileNo: '1234567890' }
 
   const obj1 = {
     name: "naman",
     city: "nashik",
   };
   console.log("Object with const");
-  console.log("original object :", obj1, "\n");
+  console.log("original object :", obj1, "\n"); // original object : { name: 'naman', city: 'nashik' }
 
   obj1.state = "Maharashtra";
-  console.log("object after property addition :", obj1);
+  console.log("object after property addition :", obj1); // object after property addition : { name: 'naman', city: 'nashik', state: 'Maharashtra' }
+
   delete obj1.city;
-  console.log("object after property delete :", obj1);
+  console.log("object after property delete :", obj1); // object after property delete : { name: 'naman', state: 'Maharashtra' }
 }
 
 arrayOperations();
