@@ -2,62 +2,59 @@
     Use let and const to create arrays and objects. Try modifying, deleting properties within the array or object. What do you expect to happen in both cases? What actually happens in both cases. What is the difference between an object declared as a let or a const variable?
 */
 
-
 function arrayOperations() {
-    let ar = [1, 2, 3, 4, 5]
-    console.log("Array with let")
-    console.log("Original array:", ar)
-    
-    ar.push(100);
-    console.log("array after adding element:", ar)
+  let ar = [1, 2, 3, 4, 5];
+  console.log("Array with let");
+  console.log("Original array:", ar);
 
-    ar.pop()
-    console.log("array after removing element:", ar)
-    console.log()
+  ar.push(100);
+  console.log("array after adding element:", ar);
 
-    const ar1 = [1,2,3]
-    console.log("Array with const")
-    console.log("Original array:", ar1)
-    
-    ar1.push(100);
-    console.log("array after adding element:", ar1)
+  ar.pop();
+  console.log("array after removing element:", ar, "\n");
 
-    ar1.pop();  ar1.pop();
-    console.log("array after removing 2 elements:", ar1)
+  const ar1 = [1, 2, 3];
+  console.log("Array with const");
+  console.log("Original array:", ar1);
 
+  ar1.push(100);
+  console.log("array after adding element:", ar1);
+
+  ar1.pop();
+  ar1.pop();
+  console.log("array after removing 2 elements:", ar1);
 }
 
 function objectOperations() {
-    console.log();
-    let obj = {
-        name: "vinay",
-        city: "pune"
-    }
+  console.log("\n");
+  let obj = {
+    name: "vinay",
+    city: "pune",
+  };
 
-    console.log("Object with let")
-    console.log("original object :", obj)
-    
-    obj.mobileNo = "1234567890"
-    console.log("object after property addition :", obj)
-    delete obj.city
-    console.log("object after property delete :", obj)
-    console.log()
-    
-    const obj1 = {
-        name: "naman",
-        city: "nashik"
-    }
-    console.log("Object with const")
-    console.log("original object :", obj1)
-    
-    obj1.state= "Maharashtra"
-    console.log("object after property addition :", obj1)
-    delete obj1.city
-    console.log("object after property delete :", obj1)
+  console.log("Object with let");
+  console.log("original object :", obj);
+
+  obj.mobileNo = "1234567890";
+  console.log("object after property addition :", obj);
+  delete obj.city;
+  console.log("object after property delete :", obj, "\n");
+
+  const obj1 = {
+    name: "naman",
+    city: "nashik",
+  };
+  console.log("Object with const");
+  console.log("original object :", obj1, "\n");
+
+  obj1.state = "Maharashtra";
+  console.log("object after property addition :", obj1);
+  delete obj1.city;
+  console.log("object after property delete :", obj1);
 }
 
-arrayOperations()
-objectOperations()
+arrayOperations();
+objectOperations();
 
 /*
     1. What do you expect to happen in both cases?
