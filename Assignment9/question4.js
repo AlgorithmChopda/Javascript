@@ -59,7 +59,7 @@ async function main() {
     data = await fetchData();
     displayTable(data);
   } catch (err) {
-    console.log(err);
+    console.log("error:", err);
   }
 }
 
