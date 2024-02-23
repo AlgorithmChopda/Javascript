@@ -9,6 +9,7 @@ const testAsyncFunction = () => {
     }
   }).catch((err) => {
     console.log("Error caught in testAsyncFunction", err);
+    // error for above promise is catched and again error is thrown to caller function
     throw new Error("Forced error");
   });
 };
@@ -30,7 +31,7 @@ testAsyncFunction()
         - when promise is rejected the ".catch" inside the testAsyncFunction will run and at end we are again throwing new error
         from catch that will be handled in outer catch
 
-        output: Error caught in testAsyncFunction: Test Reject
-                Error in catch block:  Error: Forced error
+    output: Error caught in testAsyncFunction: Test Reject
+            Error in catch block:  Error: Forced error
 
 */

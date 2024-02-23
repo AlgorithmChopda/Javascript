@@ -16,5 +16,6 @@ testAsyncFunction()
     Promise is always rejected
     State: Rejected
         - promise is rejected the ".catch" run
-        output: Error in catch block Test static reject
+    
+    output: Error in catch block Test static reject
 */

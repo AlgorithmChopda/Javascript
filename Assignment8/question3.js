@@ -30,6 +30,6 @@ testAsyncFunction()
         in catch it will return undefined from the function as 
         - and the outer then will execute
 
-        output: Error caught in testAsyncFunction: Test Reject
-                Response in then block: undefined
+    output: Error caught in testAsyncFunction: Test Reject
+            Response in then block: undefined
 */

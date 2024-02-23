@@ -25,3 +25,11 @@ const func = async () => {
 };
 
 func();
+
+/*
+  output:
+  
+  Printing before
+    [-- 3 sec wait --]
+  Printing after
+*/
