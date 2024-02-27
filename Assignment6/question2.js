@@ -14,6 +14,7 @@
     
     1. Mutating Methods are methods that modify the original array without returning anything
     2. Non-mutating Methods internally create a copy of an array modifies it accordingly and returns the new array
+    3. To verify we can see the function declaration or documentation or try running the code once
 */
 
 let ar = [1, 2, 300, 4, 5];
