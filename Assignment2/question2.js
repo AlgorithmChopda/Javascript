@@ -61,9 +61,11 @@ objectOperations();
 /*
     1. What do you expect to happen in both cases?
         - The object should be modified as reference is stored
+        - Array should also be modified
 
     2. What actually happens in both cases
         - Object gets modified
+        - Array also gets modified as methods directly update underlying array
     
     3. What is the difference between an object declared as a let or a const variable?
         - in const object only properties can be changed but the location where obj is poiting cannot be changed
