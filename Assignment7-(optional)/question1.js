@@ -70,104 +70,104 @@ function checkDeepCopyObject(obj1, obj2) {
   return true;
 }
 
-// let obj1 = {
-//   ar: [1, 2],
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj1 = {
+  ar: [1, 2],
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// let obj2 = {
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj2 = {
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// console.log("comparing obj1 and obj2 :", checkDeepCopyObject(obj1, obj2)); // comparing obj1 and obj2 : true
-// /*
-//   output:
-//     Failed: length doesnt match
-//     comparing obj1 and obj2 : false
-// */
+console.log("comparing obj1 and obj2 :", checkDeepCopyObject(obj1, obj2)); // comparing obj1 and obj2 : true
+/*
+  output:
+    Failed: length doesnt match
+    comparing obj1 and obj2 : false
+*/
 
-// let obj3 = {
-//   ar: [1, 2],
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj3 = {
+  ar: [1, 2],
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// let obj4 = {
-//   ar: [1],
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj4 = {
+  ar: [1],
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// console.log("comparing obj3 and obj4 :", checkDeepCopyObject(obj3, obj4)); // comparing obj1 and obj2 : true
-// /*
-//   output:
-//     Failed: Object key: ar has mismatch array length
-//     comparing obj3 and obj4 : false
-// */
+console.log("comparing obj3 and obj4 :", checkDeepCopyObject(obj3, obj4)); // comparing obj1 and obj2 : true
+/*
+  output:
+    Failed: Object key: ar has mismatch array length
+    comparing obj3 and obj4 : false
+*/
 
-// let obj5 = {
-//   ar: [1, 2],
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj5 = {
+  ar: [1, 2],
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// let obj6 = {
-//   ar1: [1],
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj6 = {
+  ar1: [1],
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// console.log("comparing obj5 and obj6 :", checkDeepCopyObject(obj5, obj6)); // comparing obj1 and obj2 : true
-// /*
-//   output:
-//     Failed: property ar not found
-//     comparing obj5 and obj6 : false
-// */
+console.log("comparing obj5 and obj6 :", checkDeepCopyObject(obj5, obj6)); // comparing obj1 and obj2 : true
+/*
+  output:
+    Failed: property ar not found
+    comparing obj5 and obj6 : false
+*/
 
-// let obj7 = {
-//   ar: "temp",
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj7 = {
+  ar: "temp",
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// let obj8 = {
-//   ar: [1],
-//   name: "vinay",
-//   detail: {
-//     val: 100,
-//     ar1: [1, 2, 3],
-//   },
-// };
+let obj8 = {
+  ar: [1],
+  name: "vinay",
+  detail: {
+    val: 100,
+    ar1: [1, 2, 3],
+  },
+};
 
-// console.log("comparing obj7 and obj8 :", checkDeepCopyObject(obj7, obj8)); // comparing obj1 and obj2 : true
-// /*
-//   output:
-//     Failed: type of ar didn't matched
-//     comparing obj7 and obj8 : false
-// */
+console.log("comparing obj7 and obj8 :", checkDeepCopyObject(obj7, obj8)); // comparing obj1 and obj2 : true
+/*
+  output:
+    Failed: type of ar didn't matched
+    comparing obj7 and obj8 : false
+*/
 
 let obj9 = {
   name: "vinay",
