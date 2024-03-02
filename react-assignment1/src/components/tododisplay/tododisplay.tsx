@@ -54,7 +54,7 @@ export function TodoDisplay({
         <Modal.Body>are you sure you want to delete todo ?</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleDeleteClose}>
-            Close
+            Cancel
           </Button>
           <Button
             variant="danger"
@@ -77,7 +77,7 @@ export function TodoDisplay({
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleStatusClose}>
-            Close
+            Cancel
           </Button>
           <Button
             variant="success"
