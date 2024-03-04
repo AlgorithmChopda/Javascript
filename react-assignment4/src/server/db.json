@@ -1,0 +1,19 @@
+{
+    "todos": [
+        {
+            "title": "Do React Assignment",
+            "duedate": "1/4/2004",
+            "isCompleted": false
+        },
+        {
+            "title": "React about useEffect",
+            "duedate": "1/4/2004",
+            "isCompleted": true
+        },
+        {
+            "title": "Read about axios",
+            "duedate": "1/4/2004",
+            "isCompleted": false
+        }
+    ]
+}
