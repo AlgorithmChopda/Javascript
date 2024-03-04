@@ -15,9 +15,12 @@ function App() {
 
   const addTodoHandler = async (todoTitle: string, dueDate: string) => {
     // mock api call to add todo
-
     axios
-      .post("/add", { todo: todoTitle, completed: false, dueDate })
+      .post("http://localhost:8000/todos", {
+        todo: todoTitle,
+        completed: false,
+        dueDate,
+      })
       .then(() => {
         // update state
         setTodo([
@@ -30,7 +33,10 @@ function App() {
         ]);
         toast.success("todo added successfully");
       })
-      .catch(() => toast.error("error adding the todo"));
+      .catch((error) => {
+        toast.error("error adding todo");
+        console.log(error);
+      });
   };
 
   const updateTodoHandler = (index: number) => {
