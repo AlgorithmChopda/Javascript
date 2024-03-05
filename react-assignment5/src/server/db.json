@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "id": "c4ad",
+      "title": "temp todo",
+      "isCompleted": false,
+      "dueDate": "2024-03-15"
+    },
+    {
+      "id": "d0f6",
+      "title": "temp todo 1",
+      "isCompleted": false,
+      "dueDate": "2024-03-24"
+    },
+    {
+      "id": "503f",
+      "title": "todo by vinay",
+      "isCompleted": false,
+      "dueDate": "2024-03-14"
+    }
+  ]
+}
