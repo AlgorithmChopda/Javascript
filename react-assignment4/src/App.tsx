@@ -15,6 +15,7 @@ function App() {
 
   const addTodoHandler = async (todoTitle: string, dueDate: string) => {
     // mock api call to add todo
+    console.log("in add todo handler");
     axios
       .post("http://localhost:8000/todos", {
         todo: todoTitle,

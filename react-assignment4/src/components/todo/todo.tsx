@@ -13,7 +13,12 @@ export const Todo = ({ addTodo }: TodoProp) => {
     <div className="mx-auto w-80 mt-5">
       <div className="row justify-content-center mb-5">
         <div className="col-md-5">
-          <form>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              addTodo(todoTitle, dueDate);
+            }}
+          >
             <input
               id="todo"
               className="form-control mb-3 flex-grow-1"
@@ -34,7 +39,6 @@ export const Todo = ({ addTodo }: TodoProp) => {
             <button
               className="btn btn-primary col-md-3 ml-2 flex-grow-1"
               style={{ height: "38px" }}
-              onClick={() => addTodo(todoTitle, dueDate)}
             >
               Add
             </button>
