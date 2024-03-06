@@ -1,15 +1,15 @@
 {
     "todos": [
         {
-            "title": "Do React Assignment",
+            "title": "Complete Assingment",
             "isCompleted": false
         },
         {
-            "title": "React about useEffect",
+            "title": "shopping list",
             "isCompleted": true
         },
         {
-            "title": "Read about axios",
+            "title": "read about react in detail",
             "isCompleted": false
         }
     ]
