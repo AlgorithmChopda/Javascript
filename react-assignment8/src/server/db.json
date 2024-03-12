@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "id": "c4ad",
+      "title": "temp todo",
+      "isCompleted": false,
+      "description": "this is a sample description to the todo",
+      "assignedTo": "Vinay",
+      "dueDate": "2024-03-15"
+    },
+    {
+      "id": "d0f6",
+      "title": "temp todo 1",
+      "isCompleted": false,
+      "description": "this is a sample description to the todo",
+      "assignedTo": "Naman",
+      "dueDate": "2024-03-24"
+    },
+    {
+      "id": "503f",
+      "title": "todo by vinay",
+      "isCompleted": false,
+      "description": "this is a sample description to the todo",
+      "assignedTo": "Suhaan",
+      "dueDate": "2024-03-14"
+    },
+    {
+      "id": "39c1",
+      "title": "react assignment 8",
+      "isCompleted": false,
+      "dueDate": "2024-03-23"
+    },
+    {
+      "id": "f9ca",
+      "title": "tep tep",
+      "isCompleted": false,
+      "dueDate": "2024-03-22"
+    }
+  ]
+}
