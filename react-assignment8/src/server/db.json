@@ -23,18 +23,6 @@
       "description": "this is a sample description to the todo",
       "assignedTo": "Suhaan",
       "dueDate": "2024-03-14"
-    },
-    {
-      "id": "39c1",
-      "title": "react assignment 8",
-      "isCompleted": false,
-      "dueDate": "2024-03-23"
-    },
-    {
-      "id": "f9ca",
-      "title": "tep tep",
-      "isCompleted": false,
-      "dueDate": "2024-03-22"
     }
   ]
 }

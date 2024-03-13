@@ -33,6 +33,8 @@ function App() {
         title: todoTitle,
         isCompleted: false,
         dueDate,
+        assignedTo,
+        description: desc,
       })
       .then(() => {
         // update state
