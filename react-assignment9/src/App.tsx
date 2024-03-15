@@ -15,11 +15,14 @@ import {
   paginationInitialState,
   paginationReducer,
 } from "./reducer/pagination";
+import { QueryClient, useQuery, useQueryClient } from "react-query";
 
 function App() {
   const limit = 2;
   const [todoList, setTodo] = useState<todo[]>([]);
   const [key, setKey] = useState("");
+
+  const queryClient = useQueryClient();
 
   const [pagination, paginationDispatch] = useReducer(
     paginationReducer,
@@ -75,6 +78,7 @@ function App() {
           },
         ]);
         toast.success("todo added successfully");
+        queryClient.invalidateQueries([url]);
       })
       .catch((error) => {
         toast.error("error adding todo");
