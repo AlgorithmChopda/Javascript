@@ -7,10 +7,10 @@
     2.  Do the same using switch case.
     3. Declare a variable let arraySize = 25;. Using a for loop, add numbers from one onwards into an array till the arraySize is reached.
     4. Accomplish the same using a while loop.
-    5. Can you use return instead of break in loops?
+    5. Can you use return instead of break in loop?
 */
 
-// part 1
+// part 1.
 let age = 5;
 if (age <= 12) {
   console.log("child"); // output: child
