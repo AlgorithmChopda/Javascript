@@ -20,7 +20,7 @@ if (age <= 12) {
   console.log("adult");
 }
 
-//part 2
+//part 2.
 switch (true) {
   case age <= 12:
     console.log("child"); // output: child
@@ -32,7 +32,7 @@ switch (true) {
     console.log("adult");
 }
 
-//part 3
+//part 3.
 let ar = [],
   arraySize = 25;
 for (let i = 1; i <= arraySize; i++) {
