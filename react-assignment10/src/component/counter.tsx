@@ -7,7 +7,7 @@ export const Counter = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <h3> Count : {count} </h3>
+      <h4> Count : {count} </h4>
       <button onClick={() => dispatch(increment())}> Increment </button>
       <button onClick={() => dispatch(decrement())}> Decrement </button>
     </div>
